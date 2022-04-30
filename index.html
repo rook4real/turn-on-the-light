@@ -17,13 +17,21 @@
 
     <button id="myBtn1">ON</button>
 
-    <img id="btnOn" src="img/pic_bulboff.gif" alt="off">
+    <img id="bulb" src="img/pic_bulboff.gif" alt="image of bulb">
 
     <button id="myBtn2">OFF</button>
 
     <script>
         const btn1 = document.getElementById("myBtn1");
-        const btn2 = document.getElementById("myBtn2")
+        const btn2 = document.getElementById("myBtn2");
+        var img = document.getElementById("bulb");
+        btn1.addEventListener("click", function () {
+            img.src = "img/pic_bulbon.gif";
+        })
+        btn2.addEventListener("click", function () {
+            img.src = "img/pic_bulboff.gif";
+        })
+
     </script>
 </body>
 
